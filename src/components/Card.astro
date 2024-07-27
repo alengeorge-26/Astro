@@ -11,6 +11,7 @@ const {title,body,dark=false} = Astro.props as Props;
 <div class={`card ${dark && 'dark'}`}>
     <h3>{title}</h3>
     <p>{body}</p>
+    <slot/>
 </div>
 
 <style>
